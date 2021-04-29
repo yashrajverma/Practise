@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="eduford_img/logo.png" alt="logo" class="nav-img"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i
+            class="fa fa-times-circle"
+            aria-hidden="true"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Worlds Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+          Corporis et labore libero culpa dicta unde natus voluptatibus, impedit
+          sed minima?
+        </p>
+        <a href="#">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- -------------------- courses --------------------- -->
+
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
+        autem!
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero
+            eveniet cumque porro quas accusantium repellendus atque quaerat.
+            Numquam, quisquam.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero
+            eveniet cumque porro quas accusantium repellendus atque quaerat.
+            Numquam, quisquam.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>E Degrees</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero
+            eveniet cumque porro quas accusantium repellendus atque quaerat.
+            Numquam, quisquam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- campus --------------------- -->
+
+    <section class="campus">
+      <h1>Our Campuses</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
+        autem!
+      </p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="/eduford_img/london.png" alt="" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="/eduford_img/newyork.png" alt="" />
+          <div class="layer">
+            <h3>New York</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="/eduford_img/washington.png" alt="" />
+          <div class="layer">
+            <h3>Washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------- facilities-------------------- -->
+
+    <div class="facilities">
+      <h1>Facilities at Campus</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam qui
+        esse veritatis, dolorem distinctio.
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="/eduford_img/library.png" />
+          <div>
+            <h3>World class Library</h3>
+          </div>
+        </div>
+        <div class="facilities-col">
+          <img src="/eduford_img/cafeteria.png" />
+          <div>
+            <h3>World class Cafeteria</h3>
+          </div>
+        </div>
+        <div class="facilities-col">
+          <img src="/eduford_img/basketball.png" />
+          <div>
+            <h3>World class Basketball</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

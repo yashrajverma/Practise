@@ -1,0 +1,31 @@
+*,body{
+    margin: 0;
+    padding:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    z-index: 1000;
+    margin: 0 auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex: row wrap;
+    padding:10px;
+
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px 22px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: coral;
+    transition: ease-in;
+    border: 0px;
+}
+li:hover{
+    transition: 4s;
+    border-bottom: 1.3px solid coral;
+}

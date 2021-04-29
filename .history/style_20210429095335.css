@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(2, 20, 46, 0.7),rgba(5, 20, 37, 0.7)) ,url('./eduford_img/banner.png');
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.nav-img{
+    width: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    padding: 0 10px ;
+    display: inline-block;
+    position: relative;
+}
+.nav-links ul li  a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav-links ul li::after{
+    width: 0;
+    height: 2px;
+    content: '';
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    box-shadow: 0px 0px 13px #f44336;
+}
+.text-box{
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    font-size: 13px;
+}
+.text-box a{
+    display: inline-block;
+    padding: 12px 34px ;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin: 12px;
+    border: 1px solid white;
+    background: transparent;
+    transition: 0.4s;
+}
+.text-box a:hover{
+    background: #f44336;
+    border:1px solid #f44336;
+    box-shadow: 0px 0px 13px #f44336;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+        margin: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        top: 0;
+        right: -200px;
+        background: #f44336;
+        width: 200px;
+        height: 100vh;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color:white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* ------------------------------------- course ----------------------------- */
+
+.course{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+.course h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+h3{
+    font-weight: 600;
+    text-align: center;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/* ----------------- capmus ----------------------- */
+
+
+.campus{
+    width: 80%;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+.campus h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-col img{
+    width: 100%;
+    height: 100%;
+}
+.campus-col .layer{
+    background:transparent;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.campus-col .layer:hover{
+   background: rgba(2, 18, 41, 0.5);
+   box-sizing: border-box;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    bottom: 0%;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.7s;
+}
+.layer:hover h3{
+    opacity: 1;
+    bottom: 49%;
+}
+@media(max-width:700px){
+    .campus-col{
+        flex-direction: column;
+    }
+}
+
+/* ----------------------------------- facilities ------------------------------ */
+
+
+.facilities{
+    width: 80%;
+    padding-top: 80px;
+    text-align: center;
+    margin: auto;
+}
+.facilities-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.facilities-col img{
+    width: 100%;
+    height: 100%;
+
+}
+.facilities-col h3{
+    font-weight: 500;
+  
+}
+.facilities-col .layer{
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: 0.5s;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+.facilities-col .layer:hover{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6));
+}
+
+/* ------------------------------ footer --------------------------- */
+footer{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding: 80px;
+    margin-top: 80px;
+}
+
+.section1{
+    flex-basis: 20%;
+    padding: 20px;
+}
+.section1 img{
+    width: 100%;
+    height: 100%;
+    
+}
+.section2{
+    display: block;
+}
+.section2 ul li{
+    list-style: none;
+    padding: 10px 0;
+    display: block;
+}
+.section2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.section3{
+    display: block;
+    flex-basis: 32%;
+}
+.section3 form{
+    display: flex;
+    flex-direction: column;
+}
+.section3 form input{
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(127, 138, 150);
+    color: white;
+    border: none;
+}
+form button{
+    padding: 10px;
+    color: white;
+    background-color: lightsalmon;
+    outline: none;
+    border: none;
+    letter-spacing: 2px;
+    
+}
+.social-links{
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    right: 1%;
+    top: 40%;
+    transform: translate(-50%,1%);
+}
+.social-links ul li{
+    display: block;
+    padding: 10px 4px;
+    list-style-type: none;
+}
+.social-links ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.fa-facebook{
+    color: cornflowerblue;
+}
+.fa-facebook:hover{
+    color: rgb(59, 121, 236);
+}
+.fa-instagram{
+    color: rgb(238, 69, 159);
+}
+.fa-instagram:hover{
+   color: deeppink;
+}
+.fa-linkedin{
+    color:dodgerblue;
+}
+.fa-linkedin:hover{
+    color:rgb(0, 81, 161)
+}
+.fa-twitter-square{
+    color:lightskyblue
+}
+.fa-twitter-square:hover{
+    color:rgb(24, 139, 216)
+}
+.fa-github-square{
+    color:black
+}
+.fa-github-square:hover{
+    background-color: black;
+    color: white;
+}
