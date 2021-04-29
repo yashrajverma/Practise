@@ -89,12 +89,10 @@ nav .fa{
     .text-box h1{
         font-size: 20px;
     }
-    .nav-links{
-        overflow: hidden;
-    }
     .nav-links ul li{
         display: block;
         margin: 10px;
+        overflow: hidden;
     }
     .nav-links{
         position: absolute;
@@ -376,7 +374,6 @@ footer{
 }
 .section3{
     flex-basis: 32%;
-    justify-content: center;
 }
 .section3 hr{
     border: none;
