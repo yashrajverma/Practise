@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 .header {
@@ -108,7 +107,8 @@ nav .fa {
     height: 100vh;
     text-align: left;
     z-index: 2;
-    
+    overflow: hidden;
+
   }
   nav .fa {
     display: block;
